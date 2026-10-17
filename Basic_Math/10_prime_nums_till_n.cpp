@@ -1,3 +1,7 @@
+/*Core Idea: Instead of checking if every number is prime by trying to divide it, we do the reverse:
+start with the smallest prime (2) and cross out (mark as false) all of its multiples, 
+because any multiple of a number cannot be prime. Then move to the next unmarked number and repeat.*/
+
 class Solution {
 public:
     int primeUptoN(int n) {
@@ -20,3 +24,4 @@ public:
         return count;
         } 
 };
+
